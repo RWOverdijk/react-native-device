@@ -52,6 +52,7 @@ The device model is of type iPhone or iPod touch
 
 Full documentation on the native properties: [Apple documentation](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDevice_Class/index.html)
 
+#### Device and Operating System
 ```javascript
 Device.model
 ```
@@ -83,6 +84,12 @@ Device.systemVersion
 The device OS version, such as `8.4`
 
 ```javascript
+Device.identifierForVendor
+```
+
+Device unique id (UUID)
+
+```javascript
 Device.multitaskingSupported
 ```
 
@@ -98,11 +105,7 @@ What type of device it is. Possible values:
 - Pad
 - Unknown
 
-```javascript
-Device.identifierForVendor
-```
-
-Device unique id (UUID)
+#### Orientation
 
 ```javascript
 Device.orientation
@@ -123,6 +126,8 @@ Device.generatesDeviceOrientationNotifications
 ```
 
 Whether the device can change orientation or not. (Orientation lock)
+
+#### Battery
 
 ```javascript
 Device.batteryLevel
@@ -146,6 +151,8 @@ State of the battery. Possible values:
 - Full
 - Unplugged
 - Unknown
+
+#### Proximity
 
 ```javascript
 Device.proximityMonitoringEnabled
