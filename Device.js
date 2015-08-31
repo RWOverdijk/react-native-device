@@ -50,6 +50,18 @@ class Device {
   getProximityState(callback) {
     DeviceUtil.getProximityState(callback);
   }
+
+  watchOrientationChange(callback) {
+    DeviceUtil.watchOrientationChange(callback);
+  }
+
+  watchBatteryChange(callback) {
+    DeviceUtil.watchBatteryChange(callback);
+  }
+
+  watchProximityChange(callback) {
+    DeviceUtil.watchProximityChange(callback);
+  }
 }
 
 module.exports = new Device();
